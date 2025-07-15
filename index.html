@@ -249,6 +249,7 @@
     <p>© 2025 Abdullah Almakhmari. All rights reserved.</p>
   </footer>
 
+
   <!-- java script -->
   <script>
     const hamburger = document.getElementById('hamburger');
@@ -257,7 +258,14 @@
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
+
+    document.querySelectorAll('#nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
   </script>
+
 
 
 </body>
