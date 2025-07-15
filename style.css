@@ -775,11 +775,24 @@ body {
 /* purger */
 
 .hamburger {
-  display: none;
+  display: block;
   font-size: 28px;
   color: white;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 12px;
+  border-radius: 6px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  transition: background-color 0.3s ease;
 }
+
+.hamburger:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 
 nav {
   display: flex;
